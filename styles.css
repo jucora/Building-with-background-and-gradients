@@ -1,0 +1,81 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*My styles*/
+
+main{
+	background: url("url(/web/20140301004259im_/http://images.apple.com/global/nav/images/globalnav_text.svg)");
+	padding:0 12.5%;
+}
+
+.main-content{
+	background-color: red;
+	height: 500px;
+	width: 100%;
+}
+
+nav{
+	background-color: green;
+	display: block;
+	height: 40px;
+	margin: 0 auto;
+	position: relative;
+	text-align: left;
+	width: 980px;
+	z-index: 20;
+}
+
+nav li{
+	border: 1px solid black;
+	display: table-cell;
+	height: 36px;
+	overflow: hidden;
+	width: 11.1%;
+}
