@@ -160,6 +160,7 @@ aside li{
 }
 
 footer{
+
 	position: absolute;
     z-index: 1;
     bottom: 0;
@@ -167,7 +168,7 @@ footer{
     height: 90px;
     padding: 0;
     color: #6e6e6e;
-    font-size: .8334em;
+    font-size: 11px;
     line-height: 1.2;
     text-align: center;
     zoom: 1;
@@ -183,6 +184,11 @@ footer{
 	float: left;
     padding-top: 1.5em;
     text-align: left;
+}
+
+footer a{
+	color: #4A8FFF;
+	text-decoration: none;
 }
 
 .footer-menu{
