@@ -63,7 +63,7 @@ main{
 	background-position:bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 595px;
+	height: 700px;
 	overflow: hidden;
 	width: 100%;
 }
@@ -128,12 +128,11 @@ header a{
 }
 
 aside{
+	
 	position: absolute;
     z-index: 1;
     bottom: 90px;
-    clear: left;
     display: block;
-    overflow: hidden;
     width: 100%;
     height: 200px;
 }
@@ -144,7 +143,6 @@ aside ul{
     overflow: hidden;
     margin: 0 auto;
     min-width: 1024px;
-    width: 100%;
     max-width: 1440px;
     height: 200px;
     list-style: none outside;
@@ -159,4 +157,52 @@ aside li{
     margin: 0;
     width: 25%;
     height: 200px;
+}
+
+footer{
+	position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    padding: 0;
+    color: #6e6e6e;
+    font-size: .8334em;
+    line-height: 1.2;
+    text-align: center;
+    zoom: 1;
+}
+
+.footer-container{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.footer-info{
+	display: block;
+	float: left;
+    padding-top: 1.5em;
+    text-align: left;
+}
+
+.footer-menu{
+	float: right;
+    padding-top: 1.5em;
+    
+}
+
+.footer-menu li{
+	    display: inline-block;
+}
+
+.copyright p{
+	display: block;
+	float: left;
+    padding-top: 1.5em;
+    text-align: left;
+}
+
+.copyright li{
+		float: left;
+	    display: inline-block;
 }
