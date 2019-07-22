@@ -56,31 +56,57 @@ main{
 
 .main-content{
 	background:url("img/your_verse_hero.jpg");
-	background-position: bottom;
+	background-position:bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 600px;
+	height: 645px;
 	overflow: hidden;
 	width: 100%;
 }
 
 nav{
-	background-color: green;
+	background-image: linear-gradient(gray, black);;
+	border-radius: 5px;
+	color: #fff;
 	display: block;
 	height: 40px;
 	margin: 5.5% auto;
 	position: relative;
-	text-align: left;
-	width: 980px;
+	text-align: center;
+	width: 68%;
 	z-index: 20;
 }
 
+.apple-logo{
+	width: 15px;
+}
+
+nav li input{
+	border-radius: 10px;
+	width: 100px;
+}
+
 nav li{
-	border: 1px solid black;
 	display: table-cell;
 	height: 36px;
 	overflow: hidden;
+	vertical-align: middle;
 	width: 13%;
+}
+
+header{
+	color: #fff;
+}
+
+.header-text{
+	text-align: center;
+}
+
+header h1{
+	font-size: 70px;
+}
+header h2{
+	font-size: 30px;
 }
 
 aside{
