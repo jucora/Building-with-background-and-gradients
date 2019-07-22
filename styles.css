@@ -51,13 +51,16 @@ table {
 /*My styles*/
 
 main{
-	background: url("url(/web/20140301004259im_/http://images.apple.com/global/nav/images/globalnav_text.svg)");
 	padding:0 12.5%;
 }
 
 .main-content{
-	background-color: red;
-	height: 500px;
+	background:url("img/your_verse_hero.jpg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	overflow: hidden;
 	width: 100%;
 }
 
@@ -65,7 +68,7 @@ nav{
 	background-color: green;
 	display: block;
 	height: 40px;
-	margin: 0 auto;
+	margin: 5.5% auto;
 	position: relative;
 	text-align: left;
 	width: 980px;
@@ -77,5 +80,37 @@ nav li{
 	display: table-cell;
 	height: 36px;
 	overflow: hidden;
-	width: 11.1%;
+	width: 13%;
+}
+
+aside{
+	position: absolute;
+    z-index: 1;
+    bottom: 90px;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+}
+
+aside ul{
+	position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0 auto;
+    min-width: 1024px;
+    width: 100%;
+    max-width: 1440px;
+    height: 200px;
+    list-style: none outside;
+    text-align: center;
+}
+
+aside li{
+	position: relative;
+    z-index: 1;
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    width: 25%;
+    height: 200px;
 }
