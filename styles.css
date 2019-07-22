@@ -124,7 +124,8 @@ header a{
 }
 
 .play-icon{
-	width: 25px;
+	width: 30px;
+	vertical-align: middle;
 }
 
 aside{
