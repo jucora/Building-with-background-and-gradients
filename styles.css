@@ -50,6 +50,10 @@ table {
 
 /*My styles*/
 
+*{
+	font-family: 12px/5px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
 main{
 	padding:0 12.5%;
 }
@@ -82,12 +86,16 @@ nav{
 }
 
 nav li input{
+	background-image: url(img/magnifying.png) 7px 7px;
+	padding-left:30px;
 	border-radius: 10px;
-	width: 100px;
+	width: 50px;
 }
 
 nav li{
+	border:1px solid gray;
 	display: table-cell;
+	font-size: 14px;
 	height: 36px;
 	overflow: hidden;
 	vertical-align: middle;
