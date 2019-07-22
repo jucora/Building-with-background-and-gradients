@@ -59,7 +59,7 @@ main{
 	background-position:bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 645px;
+	height: 595px;
 	overflow: hidden;
 	width: 100%;
 }
@@ -78,7 +78,7 @@ nav{
 }
 
 .apple-logo{
-	width: 15px;
+	width: 25px;
 }
 
 nav li input{
@@ -109,10 +109,21 @@ header h2{
 	font-size: 30px;
 }
 
+header a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.play-icon{
+	width: 25px;
+}
+
 aside{
 	position: absolute;
     z-index: 1;
     bottom: 90px;
+    clear: left;
     display: block;
     overflow: hidden;
     width: 100%;
