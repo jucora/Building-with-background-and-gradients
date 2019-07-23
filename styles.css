@@ -53,23 +53,22 @@ table {
 *{
 	font-family: 12px/5px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
-
-main{
-	padding:0 12.5%;
+body{
+	height: auto;
+	padding-left: 12.5%;
+	padding-right: 12.5%;
 }
-
 .main-content{
 	background:url("img/your_verse_hero.jpg");
 	background-position:bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 700px;
+	height: 650px;
 	overflow: hidden;
 	width: 100%;
 }
-
 nav{
-	background-image: linear-gradient(to bottom, #8A8A8A 50%, #767676 50%);
+	background-image: linear-gradient(to bottom, #8A8A8A 50%, #737578 50%);
 	border-radius: 5px;
 	color: #fff;
 	display: block;
@@ -80,18 +79,42 @@ nav{
 	width: 68%;
 	z-index: 20;
 }
-
 .apple-logo{
 	width: 25px;
 }
 
-nav li input{
-	background-image: url(img/magnifying.png) 7px 7px;
-	padding-left:30px;
-	border-radius: 10px;
-	width: 50px;
+nav a{
+	color: #fff;
+	text-decoration: none;
 }
 
+.search-image{
+	left: 2px;
+	position:absolute;
+	top: 3px;
+	width: 12px;
+	z-index: 50;
+}
+nav input{
+	background-color: #8A8A8A;
+	background-image: url(img/magnifying.png);
+	background-size: 12px 12px;
+	background-position: left;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	margin-right: 2px;
+	width: 100px;
+  	-webkit-transition: background-image, width 1.5s;
+  	transition: background-image, width 1.5s;
+
+	float: left;
+	
+}
+nav input:focus{
+	background-color: white;
+	background-image: url(img/magnifying-2.png);
+	width: 120px;
+}
 nav li{
 	border:1px solid gray;
 	display: table-cell;
@@ -101,115 +124,99 @@ nav li{
 	vertical-align: middle;
 	width: 13%;
 }
-
+nav ul li:hover{
+	background-image: linear-gradient(to bottom, #8A8A8A 20%, #363737 80%);
+}
 header{
 	color: #fff;
 }
-
 .header-text{
 	text-align: center;
 }
-
 header h1{
 	font-size: 70px;
 }
 header h2{
 	font-size: 30px;
 }
-
 header a{
 	color: #fff;
-	text-decoration: none;
 	font-size: 25px;
+	text-decoration: none;
 }
-
 .play-icon{
-	width: 30px;
 	vertical-align: middle;
+	width: 30px;
 }
-
+.aside-div{
+	position: relative;
+	width: 100%;
+}
 aside{
-	
+	height: 200px;
+	top: 0;
+	left:0;
 	position: absolute;
     z-index: 1;
-    bottom: 90px;
-    display: block;
-    width: 100%;
-    height: 200px;
 }
-
 aside ul{
+	height: 200px;
+	list-style: none outside;
+	margin: 0 auto;
+	max-width: 1440px;
+	min-width: 1024px;
+	overflow: hidden;
+	text-align: center;
 	position: relative;
     z-index: 1;
-    overflow: hidden;
-    margin: 0 auto;
-    min-width: 1024px;
-    max-width: 1440px;
-    height: 200px;
-    list-style: none outside;
-    text-align: center;
+}
+aside li{
+	float: left;
+	height: 200px;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+    width: 25%;
+    z-index: 1;
 }
 
-aside li{
+.footer-div{
+	margin-top: 230px;
 	position: relative;
-    z-index: 1;
-    float: left;
-    overflow: hidden;
-    margin: 0;
-    width: 25%;
-    height: 200px;
+	width: 100%;
 }
 
 footer{
-
+	box-sizing: border-box;
+	height: 50px;
+	bottom: 0;
+	font-size: 12px;
+	top: 0;
+	left:0;
+	padding-left:9%; 
+	padding-right:9%; 
 	position: absolute;
+	width: 100%;
     z-index: 1;
-    bottom: 0;
-    width: 100%;
-    height: 90px;
-    padding: 0;
-    color: #6e6e6e;
-    font-size: 11px;
-    line-height: 1.2;
-    text-align: center;
-    zoom: 1;
-}
-
-.footer-container{
-	margin-left: 20%;
-	margin-right: 20%;
-}
-
-.footer-info{
-	display: block;
-	float: left;
-    padding-top: 1.5em;
-    text-align: left;
 }
 
 footer a{
-	color: #4A8FFF;
+	color: #08c;
 	text-decoration: none;
 }
 
-.footer-menu{
-	float: right;
-    padding-top: 1.5em;
-    
-}
-
-.footer-menu li{
-	    display: inline-block;
-}
-
-.copyright p{
-	display: block;
+.footer-info{
+	display: inline-block;
 	float: left;
-    padding-top: 1.5em;
-    text-align: left;
+	width: 100%;
 }
 
-.copyright li{
-		float: left;
-	    display: inline-block;
+footer ul li{
+	display: inline;
+	float: right;
+	vertical-align: top;
+}
+
+.copyright{
+	clear: left;
 }
