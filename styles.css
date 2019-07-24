@@ -106,9 +106,7 @@ nav input{
 	width: 100px;
   	-webkit-transition: background-image, width 1.5s;
   	transition: background-image, width 1.5s;
-
-	float: left;
-	
+	float: left;	
 }
 nav input:focus{
 	background-color: white;
@@ -133,18 +131,23 @@ header{
 .header-text{
 	text-align: center;
 }
-header h1{
-	font-size: 70px;
-	margin-bottom: 15px;
+.header-link1{
+	background-image: url("img/link1.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80px;
 }
-header h2{
-	font-size: 30px;
-	margin-bottom: 20px;
+.header-link2{
+	background-image: url("img/link2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80px;
 }
-header a{
-	color: #fff;
-	font-size: 25px;
-	text-decoration: none;
+.header-link3{
+	background-image: url("img/link3.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80px;
 }
 .play-icon{
 	vertical-align: middle;
