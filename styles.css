@@ -13,9 +13,10 @@ body{
 	background-position:bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: block;
 	height: 650px;
 	overflow: hidden;
-	width: 101%;
+	width: 100%;
 }
 nav{
 	background-image: linear-gradient(to bottom, #8A8A8A 50%, #737578 50%);
@@ -107,16 +108,14 @@ aside{
 	height: 200px;
 	margin-top: 1.5px;
 	position: relative;
-	width: 100%;
+
 }
 
 .general-promo{
 	background-repeat: no-repeat;
-	display: inline;
+	float: left;
 	height: 200px;
-	position: absolute;
-	width: 364px;
-
+	width: 25%;
 }
 .promo1{
 	background-image: url("img/promo_iphone5s.jpg");
