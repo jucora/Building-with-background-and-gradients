@@ -1,60 +1,10 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
 /*My styles*/
 
 *{
 	font-family: 12px/5px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
 body{
-	height: auto;
+	box-sizing:content-box;
 	padding-left: 12.5%;
 	padding-right: 12.5%;
 }
@@ -65,7 +15,7 @@ body{
 	background-size: cover;
 	height: 650px;
 	overflow: hidden;
-	width: 100%;
+	width: 101%;
 }
 nav{
 	background-image: linear-gradient(to bottom, #8A8A8A 50%, #737578 50%);
@@ -131,23 +81,19 @@ header{
 .header-text{
 	text-align: center;
 }
-.header-link1{
-	background-image: url("img/link1.png");
+.general-link-header{
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 80px;
+}
+.header-link1{
+	background-image: url("img/link1.png");
 }
 .header-link2{
 	background-image: url("img/link2.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 80px;
 }
 .header-link3{
 	background-image: url("img/link3.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 80px;
 }
 .play-icon{
 	vertical-align: middle;
@@ -159,34 +105,39 @@ header{
 }
 aside{
 	height: 200px;
-	top: 0;
-	left:0;
-	position: absolute;
-    z-index: 1;
-}
-aside ul{
-	height: 200px;
-	list-style: none outside;
-	margin: 0 auto;
-	max-width: 1440px;
-	min-width: 1024px;
-	overflow: hidden;
-	text-align: center;
+	margin-top: 1.5px;
 	position: relative;
-    z-index: 1;
-}
-aside li{
-	float: left;
-	height: 200px;
-	margin: 0;
-	overflow: hidden;
-	position: relative;
-    width: 25%;
-    z-index: 1;
+	width: 100%;
 }
 
+.general-promo{
+	background-repeat: no-repeat;
+	display: inline;
+	height: 200px;
+	position: absolute;
+	width: 364px;
+
+}
+.promo1{
+	background-image: url("img/promo_iphone5s.jpg");
+	left: 0;
+
+}
+.promo2{
+	background-image: url("img/promo_iphone5c.jpg");
+	left: 364px;
+	
+}
+.promo3{
+	background-image: url("img/promo_30_years.jpg");
+	left:728px;
+}
+.promo4{
+	background-image: url("img/promo_supplier_responsibility.jpg");
+	left: 1092px;
+}
 .footer-div{
-	margin-top: 230px;
+	margin-top: 20px;
 	position: relative;
 	width: 100%;
 }
@@ -195,17 +146,16 @@ footer{
 	box-sizing: border-box;
 	height: 50px;
 	bottom: 0;
-	    color: #6e6e6e;
-    font-size: .8334em;
+	color: #6e6e6e;
+    font-size: 11px;
 	top: 0;
 	left:0;
-	padding-left:9%; 
-	padding-right:9%; 
+	padding-left:18%; 
+	padding-right:18%; 
 	position: absolute;
 	width: 100%;
     z-index: 1;
 }
-
 footer a{
 	color: #08c;
 	text-decoration: none;
@@ -213,10 +163,8 @@ footer a{
 
 .footer-info{
 	display: inline-block;
-	float: left;
-	
+	float: left;	
 }
-
 footer ul li{
 	display: inline;
 	float: right;
