@@ -5,8 +5,6 @@
 }
 body{
 	box-sizing:content-box;
-	padding-left: 12.5%;
-	padding-right: 12.5%;
 }
 .main-content{
 	background:url("img/your_verse_hero.jpg");
@@ -108,7 +106,6 @@ aside{
 	height: 200px;
 	margin-top: 1.5px;
 	position: relative;
-
 }
 
 .general-promo{
@@ -149,8 +146,8 @@ footer{
     font-size: 11px;
 	top: 0;
 	left:0;
-	padding-left:18%; 
-	padding-right:18%; 
+	padding-left:15%; 
+	padding-right:15%; 
 	position: absolute;
 	width: 100%;
     z-index: 1;
@@ -167,9 +164,8 @@ footer a{
 footer ul li{
 	display: inline;
 	float: right;
-	vertical-align: top;
+	vertical-align: middle;
 }
-
 .copyright{
 	clear: left;
 }
