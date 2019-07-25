@@ -1,81 +1,171 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
 /*My styles*/
 
-main{
-	background: url("url(/web/20140301004259im_/http://images.apple.com/global/nav/images/globalnav_text.svg)");
-	padding:0 12.5%;
+*{
+	font-family: 12px/5px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+body{
+	box-sizing:content-box;
+}
+.main-content{
+	background:url("img/your_verse_hero.jpg");
+	background-position:bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	height: 650px;
+	overflow: hidden;
+	width: 100%;
+}
+nav{
+	background-image: linear-gradient(to bottom, #8A8A8A 50%, #737578 50%);
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+	height: 40px;
+	margin: 5.5% auto;
+	position: relative;
+	text-align: center;
+	width: 68%;
+	z-index: 20;
+}
+.apple-logo{
+	width: 25px;
 }
 
-.main-content{
-	background-color: red;
-	height: 500px;
+nav a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.search-image{
+	left: 2px;
+	position:absolute;
+	top: 3px;
+	width: 12px;
+	z-index: 50;
+}
+nav input{
+	background-color: #8A8A8A;
+	background-image: url(img/magnifying.png);
+	background-size: 12px 12px;
+	background-position: left;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	margin-right: 2px;
+	width: 100px;
+  	-webkit-transition: background-image, width 1.5s;
+  	transition: background-image, width 1.5s;
+	float: left;	
+}
+nav input:focus{
+	background-color: white;
+	background-image: url(img/magnifying-2.png);
+	width: 120px;
+}
+nav li{
+	border:1px solid gray;
+	display: table-cell;
+	font-size: 14px;
+	height: 36px;
+	overflow: hidden;
+	vertical-align: middle;
+	width: 13%;
+}
+nav ul li:hover{
+	background-image: linear-gradient(to bottom, #8A8A8A 20%, #363737 80%);
+}
+header{
+	color: #fff;
+}
+.header-text{
+	text-align: center;
+}
+.general-link-header{
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80px;
+}
+.header-link1{
+	background-image: url("img/link1.png");
+}
+.header-link2{
+	background-image: url("img/link2.png");
+}
+.header-link3{
+	background-image: url("img/link3.png");
+}
+.play-icon{
+	vertical-align: middle;
+	width: 30px;
+}
+.aside-div{
+	position: relative;
+	width: 100%;
+}
+aside{
+	height: 200px;
+	margin-top: 1.5px;
+	position: relative;
+}
+
+.general-promo{
+	background-repeat: no-repeat;
+	float: left;
+	height: 200px;
+	width: 25%;
+}
+.promo1{
+	background-image: url("img/promo_iphone5s.jpg");
+	left: 0;
+
+}
+.promo2{
+	background-image: url("img/promo_iphone5c.jpg");
+	left: 364px;
+	
+}
+.promo3{
+	background-image: url("img/promo_30_years.jpg");
+	left:728px;
+}
+.promo4{
+	background-image: url("img/promo_supplier_responsibility.jpg");
+	left: 1092px;
+}
+.footer-div{
+	margin-top: 20px;
+	position: relative;
 	width: 100%;
 }
 
-nav{
-	background-color: green;
-	display: block;
-	height: 40px;
-	margin: 0 auto;
-	position: relative;
-	text-align: left;
-	width: 980px;
-	z-index: 20;
+footer{
+	box-sizing: border-box;
+	height: 50px;
+	bottom: 0;
+	color: #6e6e6e;
+    font-size: 11px;
+	top: 0;
+	left:0;
+	padding-left:15%; 
+	padding-right:15%; 
+	position: absolute;
+	width: 100%;
+    z-index: 1;
+}
+footer a{
+	color: #08c;
+	text-decoration: none;
 }
 
-nav li{
-	border: 1px solid black;
-	display: table-cell;
-	height: 36px;
-	overflow: hidden;
-	width: 11.1%;
+.footer-info{
+	display: inline-block;
+	float: left;	
+}
+footer ul li{
+	display: inline;
+	float: right;
+	vertical-align: middle;
+}
+.copyright{
+	clear: left;
 }
